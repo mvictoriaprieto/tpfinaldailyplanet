@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: gray;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: $bg_azulmenu;
+}
+
+.navbar-collapse {
+    background-color: rgb(20, 20, 70);
+    width: 2000px;
+    justify-content: center;
+}
+
+header div ul li a {
+    font-size: 1.5rem;
+}
+
+.slider {
+    width: 85%;
+    margin: 0 auto 0;
+    margin-bottom: 0px;
+    margin-top: 145px;
+}
+
+.contenedor {
+    width: 1230px;
+    margin: 15px;
+}
+
+.main {
+    background-color: whitesmoke;
+    padding: 1.5rem;
+
+}
+
+.main article .principal {
+    margin-bottom: 10px;
+}
+
+.main article .principal img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.main article h2 {
+    margin: 0.5rem;
+    color: rgb(36, 61, 114);
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.main article h3 {
+    margin: 1.5rem;
+    color: rgb(36, 61, 114);
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.main article p {
+    margin: 0.5rem;
+    padding: 5px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    text-align: justify;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+aside .cajaaside {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: rgb(34, 34, 90);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e2e1e1;
+    margin: 0.3rem;
+
+}
+
+aside img {
+    width: 300px;
+    margin: 15px;
+}
+
+aside img:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease;
+}
+
+aside h4 {
+    font-size: 1.2rem;
+    margin: 2px;
+    padding: 4px;
+    text-align: center;
+    color: rgb(11, 11, 66);
+}
+.contrailer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1230px;
+    margin: 15px;
+    background-color: rgb(129, 9, 9);
+    padding: 20px;
+}
+.textotrailer h4{
+    font-size: 2rem;
+    color: white;
+    padding:10px;
+}
+
+.textotrailer p {
+    color: white;
+    font-size: 1rem;
+    text-align:justify;
+    padding:10px;
+}
+
+footer {
+    padding: 1rem;
+    background-color: white;
+    opacity: 0.7;
+    width: 100%;
+    height: 80px;
+    color: rgb(129, 129, 129);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+footer .redes {
+    width: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+footer .redes img {
+    width: 40px;
+    opacity: 0.7;
+}

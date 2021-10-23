@@ -1,0 +1,124 @@
+
+
+/*css cine*/
+.bodycines {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: gray;
+    background-size: cover;
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: $bg_azulmenu;
+
+        .navbar-collapse {
+            background-color: rgb(20, 20, 70);
+            width: 2000px;
+            justify-content: center;
+
+            header div ul li a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .conteiner {
+        width: 1130px;
+        display: block;
+        margin: auto;
+        margin-top: 190px;
+
+        .divart {
+            width: 1130px;
+            background-color: #8b1515;
+            margin-top: 30px;
+            padding: 40px;
+
+            .article {
+                width: 1100px;
+
+                .article__titulo {
+                    font-size: 2.5rem;
+                    padding: 10px;
+                    color: white;
+                }
+
+                .article__texto {
+                    padding: 10px;
+                    color: white;
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+
+        .caj1 {
+            width: 1130px;
+            background-color: whitesmoke;
+            padding: 60px;
+
+            .imagenpelicula1__img {
+                width: 400px;
+            }
+        }
+
+        .caj2 {
+            margin-top: 30px;
+            width: 1130px;
+            background-color: whitesmoke;
+            padding: 60px;
+
+            .imagenpelicula2__img {
+                width: 800px;
+            }
+        }
+
+        .caj3 {
+            margin-top: 30px;
+            width: 1130px;
+            background-color: whitesmoke;
+            padding: 60px;
+
+            .imagenpelicula3__img {
+                width: 800px;
+            }
+        }
+
+        .caj4 {
+            margin-top: 30px;
+            width: 1130px;
+            background-color: whitesmoke;
+            padding: 60px;
+
+            .imagenpelicula4__img {
+                width: 800px;
+            }
+        }
+
+        .focines {
+            margin-top: 20px;
+            background-color: white;
+            opacity: 0.7;
+            width: 100%;
+            height: 60px;
+            color: rgb(59, 59, 59);
+
+            .focines__redes {
+                width: 1.8rem;
+                
+
+                .focines__imagen {
+                    width: 40px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+/*bloque de estilos bem*/
+.texto--size {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
