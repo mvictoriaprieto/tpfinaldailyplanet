@@ -1,124 +1,80 @@
-
-
 /*css cine*/
-.bodycines {
+.bodyCines {
     font-family: 'Titillium Web', sans-serif;
-    background-color: gray;
+    background-color: black;
     background-size: cover;
+    background-attachment: fixed;
 
-    .container-fluid {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        background-color: $bg_azulmenu;
 
-        .navbar-collapse {
-            background-color: rgb(20, 20, 70);
-            width: 2000px;
-            justify-content: center;
+    .navbar {
+        background-color: $color-navbar;
 
-            header div ul li a {
-                font-size: 1.5rem;
-            }
+        .imagenNavbar {
+            margin-left: 30px;
         }
+
+        .imgNav {
+            height: 80px;
+        }
+
+        .btn {
+            @include bot;
+        }
+
+        .btn:hover {
+            @include hover;
+        }
+
+        //*section*//
+        .slider {
+            margin: 0 auto 0;
+        }
+
     }
 
-    .conteiner {
-        width: 1130px;
-        display: block;
-        margin: auto;
-        margin-top: 190px;
+    .banner {
+        margin-top: 110px;
+    }
 
-        .divart {
-            width: 1130px;
-            background-color: #8b1515;
-            margin-top: 30px;
-            padding: 40px;
-
-            .article {
-                width: 1100px;
-
-                .article__titulo {
-                    font-size: 2.5rem;
-                    padding: 10px;
-                    color: white;
-                }
-
-                .article__texto {
-                    padding: 10px;
-                    color: white;
-                    font-size: 1.5rem;
-
-                }
-            }
-        }
+    .cinesContenedor {
+        background-color: $color-amarillo;
+        padding: 10px;
 
         .caj1 {
-            width: 1130px;
-            background-color: whitesmoke;
-            padding: 60px;
-
-            .imagenpelicula1__img {
-                width: 400px;
-            }
+            @include caj;
         }
 
         .caj2 {
-            margin-top: 30px;
-            width: 1130px;
-            background-color: whitesmoke;
-            padding: 60px;
-
-            .imagenpelicula2__img {
-                width: 800px;
-            }
+            @include caj;
         }
 
         .caj3 {
-            margin-top: 30px;
-            width: 1130px;
-            background-color: whitesmoke;
-            padding: 60px;
-
-            .imagenpelicula3__img {
-                width: 800px;
-            }
+            @include caj;
         }
 
         .caj4 {
-            margin-top: 30px;
-            width: 1130px;
-            background-color: whitesmoke;
-            padding: 60px;
+            @include caj;
+        }
 
-            .imagenpelicula4__img {
-                width: 800px;
+        .divart {
+            background-color: $color-az-oscuro;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: justify;
+            color: white;
+
+            .article {
+                padding: 15px;
+
+
             }
         }
 
-        .focines {
-            margin-top: 20px;
-            background-color: white;
-            opacity: 0.7;
-            width: 100%;
-            height: 60px;
-            color: rgb(59, 59, 59);
-
-            .focines__redes {
-                width: 1.8rem;
-                
-
-                .focines__imagen {
-                    width: 40px;
-                    opacity: 0.7;
-                }
-            }
-        }
     }
-}
 
-/*bloque de estilos bem*/
-.texto--size {
-    padding-top: 1rem;
-    font-size: 1.2rem;
+    footer {
+        background-color: black;
+
+    }
 }

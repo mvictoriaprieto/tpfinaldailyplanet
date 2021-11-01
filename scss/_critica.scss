@@ -2,117 +2,84 @@
 
 .bodyCritica {
     font-family: 'Titillium Web', sans-serif;
-    background-color: gray;
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: $bg_azulmenu;
-}
-
-.navbar-collapse {
-    background-color: rgb(20, 20, 70);
-    width: 2000px;
-    justify-content: center;
-}
-
-header div ul li a {
-    font-size: 1.5rem;
-}
-
-.maincritica__titulo {
-    color: #faf9f9;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 180px;
+//*header*//
+.navbar {
+    background-color: $color-navbar;
 
 }
 
-.critica {
-    width: 1200px;
-    margin: 1rem 20rem 0rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    grid-template-areas:
-        "caja1 caja2"
-        "caja3 caja4"
+.imagenNavbar {
+    margin-left: 30px;
 }
 
-.critica__titulo {
-    text-align: left;
-    color: black;
-    font-size: 1.5rem;
-}
-
-.critica__texto {
-    margin: 0 5px;
-    text-align: left;
-    color: black;
-    font-size: 1rem;
-}
-
-.critica__caja1 {
-    border: solid 3px rgb(52, 54, 126);
-    background-color: rgba(255, 255, 255, 0.904);
-    grid-area: caja1;
-    width: 600px;
-    height: 480px;
-}
-
-.critica__caja2 {
-    border: solid 3px rgb(52, 54, 126);
-    background-color: rgba(255, 255, 255, 0.904);
-    grid-area: caja2;
-    width: 600px;
-    height: 480px;
-}
-
-.critica__caja3 {
-    border: solid 3px rgb(52, 54, 126);
-    background-color: rgba(255, 255, 255, 0.904);
-    grid-area: caja3;
-    width: 600px;
-    height: 480px;
-}
-
-.critica__caja4 {
-    border: solid 3px rgb(52, 54, 126);
-    background-color: rgba(255, 255, 255, 0.904);
-    grid-area: caja4;
-    width: 600px;
-    height: 480px;
-}
-
-.footercritica {
-    background-color: white;
-    opacity: 0.7;
-    width: 100%;
+.imgNav {
     height: 80px;
-    color: rgb(129, 129, 129);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
 }
 
-.footercritica__redes {
-    width: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+.btn {
+    @include bot;
 }
 
-.footercritica__imagen {
-    width: 40px;
-    opacity: 0.7;
+.btn:hover {
+    @include hover;
+}
+
+.banner {
+    margin-top: 110px;
+}
+
+.galeria {
+    margin-top: 10px;
+}
+
+
+$animation-delays:0,
+200ms,
+400ms,
+600ms,
+800ms,
+1000ms,
+1200ms,
+1400ms,
+1600ms,
+1800ms,
+2000ms,
+2200ms;
+
+@each $delay in $animation-delays {
+    .slideRight-#{$delay} {
+        animation-name: slideRight;
+        animation-duration: 700ms;
+        animation-delay: $delay;
+        animation-timing-function: ease-in-out;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+}
+
+div[class*="slideRight"] {
+    padding: 0.3rem;
+
+    &:hover img {
+        filter: brightness(150%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
 }
 

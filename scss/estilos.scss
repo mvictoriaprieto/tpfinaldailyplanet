@@ -1,12 +1,15 @@
-
-$bg_azulmenu: rgb(47, 47, 83);
-$bg_bordocajas:#8b1515;
-$bg_azulcajas:rgb(33, 38, 66);
+@import"variables";    
+@import"mixins";
 @import"index";
 @import"cine";
 @import"critica";
 @import"series";
-@import"tienda"
+
+
+
+
+
+
 
 
 
