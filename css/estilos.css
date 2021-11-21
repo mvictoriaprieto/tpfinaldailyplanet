@@ -987,24 +987,32 @@ main {
 @media (max-width: 575px) {
   #art h2 {
     font-size: 1.5rem;
+    margin: 10px;
   }
   #box h2 {
-    font-size: 1.2rem;
-    margin: 5px;
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  img .imagenSeries {
+    margin: 10px;
   }
 }
 
 @media (max-width: 420px) {
   #art h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 5px;
+    margin: 5px;
   }
   #box h2 {
-    font-size: 1.3rem;
-    margin: 5px;
+    font-size: 1.5rem;
+    margin: 10px;
   }
   #footerT {
     font-size: 0.8rem;
+  }
+  img .imagenSeries {
+    margin: 10px;
   }
 }
 
@@ -1017,6 +1025,9 @@ main {
   #artcine h2 {
     font-size: 1.3rem;
     margin: 5px;
+  }
+  img .imagenPelicula {
+    margin: 10px;
   }
 }
 
@@ -1040,6 +1051,10 @@ main {
   }
   .titulo h2 {
     font-size: 1rem;
+    margin: 5px;
+  }
+  img .imagenPelicula {
+    margin: 10px;
   }
 }
 

@@ -4,10 +4,11 @@
   font-family: 'Saira Condensed', sans-serif;
   background-size: cover;
   background-attachment: fixed;
-  background:#000 url(/imagenes/estrellas.gif) ;
+  background: #000 url(/imagenes/estrellas.gif);
 
 
 }
+
 //*header*//
 .navbar {
   background-color: $color-navbar;
@@ -17,7 +18,8 @@
 .imagenNavbar {
   margin-left: 30px;
 }
-.imgNav{
+
+.imgNav {
   height: 80px;
 }
 
@@ -44,17 +46,18 @@
   @include boton5
 }
 
-.banner{
-  margin-top:110px;
+.banner {
+  margin-top: 110px;
 }
+
 .divseries {
-  background-color:$color-amarillo;
+  background-color: $color-amarillo;
   padding: 10px;
   margin-top: 10px;
   border-radius: 8px;
 }
 
-.artSeries{
+.artSeries {
   background-color: $color-az-oscuro;
   margin: 15px;
   padding: 30px;
@@ -63,24 +66,22 @@
   color: white;
 }
 
-.artTitulo{
-  padding:15px;
+.artTitulo {
+  padding: 15px;
 }
 
-.div1{
+.div1 {
   @include caj;
 }
 
-.div2{
+.div2 {
   @include caj;
 }
 
-.div3{
-  @include caj;
-}
-.div4{
+.div3 {
   @include caj;
 }
 
-
-
+.div4 {
+  @include caj;
+}

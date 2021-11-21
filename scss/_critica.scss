@@ -4,7 +4,7 @@
     font-family: 'Saira Condensed', sans-serif;
     background-size: cover;
     background-attachment: fixed;
-    background:#000 url(/imagenes/estrellas.gif) ;
+    background: #000 url(/imagenes/estrellas.gif);
 
 }
 
@@ -21,6 +21,7 @@
 .imgNav {
     height: 80px;
 }
+
 .btn {
     @include boton1;
 }
@@ -97,4 +98,3 @@ div[class*="slideRight"] {
         visibility: visible;
     }
 }
-

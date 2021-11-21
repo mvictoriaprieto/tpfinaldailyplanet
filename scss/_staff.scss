@@ -1,164 +1,167 @@
 body {
-    font-family: 'Saira Condensed', sans-serif;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 1.2rem;
-    background: #000 url(/imagenes/estrellas.gif);
+  font-family: 'Saira Condensed', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 1.2rem;
+  background: #000 url(/imagenes/estrellas.gif);
 }
 
 //*header*//
 .navbar {
-    background-color: $color-navbar;
+  background-color: $color-navbar;
 
 }
 
 .imagenNavbar {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .imgNav {
-    height: 80px;
+  height: 80px;
 }
 
 .btn {
-    @include boton1;
+  @include boton1;
 }
 
 .btn:hover,
 .btn:active {
-    @include boton2;
+  @include boton2;
 }
 
 .btn:after,
 .btn:before {
-    @include boton3;
+  @include boton3;
 }
 
 .btn:hover:after,
 .btn:hover:before {
-    @include boton4;
+  @include boton4;
 }
 
 .btn:hover:before {
-    @include boton5
+  @include boton5
 }
 
-main{
-  margin-top:10px;
+main {
+  margin-top: 10px;
 }
 
-.formulario{
-    margin-top: 50px;
-    background-color:$color-amarillo;
-    padding: 25px;
-    border-radius: 4px;
-}
-.formularioTexto{
-padding-top: 30px;
+.formulario {
+  margin-top: 50px;
+  background-color: $color-amarillo;
+  padding: 25px;
+  border-radius: 4px;
 }
 
-.formTexto{
-  margin-top:30px;
+.formularioTexto {
+  padding-top: 30px;
 }
-.boton{
-  background-color:$color-rojo;
+
+.formTexto {
+  margin-top: 30px;
+}
+
+.boton {
+  background-color: $color-rojo;
 }
 
 .team-boxed {
-  color:#313437;
-  background-color:#eef4f7;
-  padding:20px;
+  color: #313437;
+  background-color: #eef4f7;
+  padding: 20px;
   margin-top: 15px;
   border-radius: 4px;
 }
 
 
 .team-boxed p {
-  color:#7d8285;
+  color: #7d8285;
 }
 
 .team-boxed h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
 }
 
 @media (max-width:767px) {
   .team-boxed h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
   }
-  .team-boxed .intro h2{
-    font-size:1.5rem;
+
+  .team-boxed .intro h2 {
+    font-size: 1.5rem;
   }
 
 }
 
 .team-boxed .texto {
-  font-size:2.5rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .team-boxed .people {
-  padding:20px 0;
+  padding: 20px 0;
 }
 
 .team-boxed .item {
-  text-align:center;
+  text-align: center;
 }
 
 .team-boxed .item .box {
-  text-align:center;
-  background-color:#fff;
-  margin-bottom:10px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 10px;
   padding: 10px;
-  
+
 }
 
 .team-boxed .item .name {
-  font-weight:bold;
-  margin-top:28px;
-  margin-bottom:8px;
-  color:inherit;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: inherit;
 }
 
 .team-boxed .item .title {
-  text-transform:uppercase;
-  font-weight:bold;
-  color:#d0d0d0;
-  letter-spacing:2px;
-  font-size:13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d0d0d0;
+  letter-spacing: 2px;
+  font-size: 13px;
 }
 
 .team-boxed .item .description {
-  font-size:20px;
-  margin-top:15px;
-  margin-bottom:20px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .team-boxed .item img {
-  max-width:160px;
+  max-width: 160px;
 }
 
 .team-boxed .social {
-  font-size:18px;
-  color:#a2a8ae;
+  font-size: 18px;
+  color: #a2a8ae;
 }
 
 .team-boxed .social a {
-  color:inherit;
-  margin:0 10px;
-  display:inline-block;
-  opacity:0.7;
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
 }
 
 .team-boxed .social a:hover {
-  opacity:1;
+  opacity: 1;
 }
 
-.news{
-  width:100%;
+.news {
+  width: 100%;
 }
