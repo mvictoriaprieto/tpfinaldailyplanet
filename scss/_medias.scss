@@ -80,7 +80,7 @@
 
 @media (max-width: 575px) {
     #art h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     #box h2 {
@@ -93,13 +93,13 @@
 @media (max-width: 420px) {
 
     #art h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 5px;
 
     }
 
     #box h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 5px
     }
 
@@ -114,7 +114,7 @@
 
 @media (max-width: 575px) {
     #boxcine h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin: 5px;
 
     }
@@ -128,7 +128,7 @@
 
 @media (max-width: 420px) {
     #boxcine h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 5px
     }
 
@@ -140,6 +140,15 @@
 
     #footerT {
         font-size: 0.8rem;
+    }
+    .artNoticiastexto h2{
+        font-size:1.3rem;
+    }
+    .imagenAcordion{
+        padding-bottom: 15px;
+    }
+    .titulo h2{
+        font-size: 1rem;
     }
 }
 
