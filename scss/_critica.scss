@@ -1,10 +1,11 @@
 /*css critica*/
 
 .bodyCritica {
-    font-family: 'Titillium Web', sans-serif;
-    background-color: black;
+    font-family: 'Saira Condensed', sans-serif;
     background-size: cover;
     background-attachment: fixed;
+    background:#000 url(/imagenes/estrellas.gif) ;
+
 }
 
 //*header*//
@@ -20,13 +21,27 @@
 .imgNav {
     height: 80px;
 }
-
 .btn {
-    @include bot;
+    @include boton1;
 }
 
-.btn:hover {
-    @include hover;
+.btn:hover,
+.btn:active {
+    @include boton2;
+}
+
+.btn:after,
+.btn:before {
+    @include boton3;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+    @include boton4;
+}
+
+.btn:hover:before {
+    @include boton5
 }
 
 .banner {

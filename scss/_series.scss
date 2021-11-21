@@ -1,10 +1,11 @@
 /*css series*/
 
 .bodySeries {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: black;
+  font-family: 'Saira Condensed', sans-serif;
   background-size: cover;
   background-attachment: fixed;
+  background:#000 url(/imagenes/estrellas.gif) ;
+
 
 }
 //*header*//
@@ -21,11 +22,26 @@
 }
 
 .btn {
-  @include bot;
+  @include boton1;
 }
 
-.btn:hover {
-  @include hover;
+.btn:hover,
+.btn:active {
+  @include boton2;
+}
+
+.btn:after,
+.btn:before {
+  @include boton3;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  @include boton4;
+}
+
+.btn:hover:before {
+  @include boton5
 }
 
 .banner{
@@ -34,6 +50,8 @@
 .divseries {
   background-color:$color-amarillo;
   padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
 .artSeries{
@@ -64,6 +82,5 @@
   @include caj;
 }
 
-footer{
-  background-color:black;
-}
+
+

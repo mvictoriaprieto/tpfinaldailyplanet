@@ -1,22 +1,3 @@
-@mixin bot {
-    width: 85px;
-    height: 70px;
-    border: none;
-    color: white;
-    background-color: $color-navbar;
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 $color-amarillo;
-    transition: ease-out 0.3s;
-    font-size: 1.5rem;
-    outline: none;
-}
-
-@mixin hover {
-    box-shadow: inset 85px 0 0 0 $color-amarillo;
-    color: black;
-    cursor: pointer;
-}
-
 @mixin caj {
     background-color: whitesmoke;
     color: black;
@@ -25,4 +6,42 @@
     padding: 20px;
     align-items: center;
     text-align: justify;
+}
+
+
+@mixin boton1 {
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+@mixin boton2 {
+    letter-spacing: 6px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+@mixin boton3 {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+@mixin boton4 {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+
+@mixin boton5 {
+    bottom: auto;
+    top: 0;
+    width: 100%;
 }

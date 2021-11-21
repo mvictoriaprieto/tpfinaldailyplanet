@@ -6,10 +6,11 @@
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: black;
+  font-family: 'Saira Condensed', sans-serif;
   background-size: cover;
   background-attachment: fixed;
+  font-size: 1.2rem;
+  background: #000 url(/imagenes/estrellas.gif);
 }
 
 .navbar {
@@ -25,25 +26,47 @@ body {
 }
 
 .btn {
-  width: 85px;
-  height: 70px;
-  border: none;
-  color: white;
-  background-color: #8C2020;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 0 0 0 #f5ca7c;
-          box-shadow: inset 0 0 0 0 #f5ca7c;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-  font-size: 1.5rem;
-  outline: none;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
-.btn:hover {
-  -webkit-box-shadow: inset 85px 0 0 0 #f5ca7c;
-          box-shadow: inset 85px 0 0 0 #f5ca7c;
-  color: black;
-  cursor: pointer;
+.btn:hover,
+.btn:active {
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:after,
+.btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
 }
 
 .slider {
@@ -51,14 +74,15 @@ body {
 }
 
 .carrusel {
-  margin-top: 95px;
+  margin-top: 105px;
   margin-bottom: 10px;
 }
 
 .noticiasIndex {
   background-color: #f5ca7c;
   border-radius: 8px;
-  padding: 15px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .artNoticias {
@@ -69,16 +93,41 @@ body {
   text-align: justify;
 }
 
+.imgArt {
+  width: 100%;
+  padding: 20px;
+}
+
+.artNoticiastexto h2 {
+  padding: 10px;
+  margin: 15px;
+  font-size: 2.5rem;
+}
+
+.artNoticiastexto h3 {
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.artNoticiastexto p {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
 .textoIndex {
   margin: 10px;
   text-align: justify;
+}
+
+.textoIndex h4 {
+  font-size: 1.8rem;
+  margin: 8px;
 }
 
 .caja {
   background-color: white;
   color: black;
   border-radius: 4px;
-  padding: 20px;
   margin: 10px;
   text-align: justify;
   -webkit-box-align: center;
@@ -94,7 +143,7 @@ body {
 }
 
 .caja:hover {
-  top: -5px;
+  top: -8px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
           box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
@@ -108,6 +157,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
 .textoTrailer {
@@ -116,78 +166,22 @@ body {
   font-size: 1.2rem;
 }
 
+.textoTrailer h4 {
+  font-size: 2rem;
+}
+
 .video {
   width: 100%;
   height: 400px;
 }
 
-footer {
-  background-color: black;
-}
-
-@media (max-width: 575px) {
-  .imgIndex {
-    padding: 20px;
-  }
-  .textoIndex {
-    font-size: 0, 5rem;
-    padding: 20px;
-  }
-  .slider {
-    margin-top: 100px;
-  }
-  .imagenNavbar {
-    margin-left: 0;
-  }
-  .textoTrailer {
-    font-size: 1rem;
-  }
-}
-
 /*css cine*/
+/*nesting*/
 .bodyCines {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: black;
+  font-family: 'Saira Condensed', sans-serif;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.bodyCines .navbar {
-  background-color: #8C2020;
-}
-
-.bodyCines .navbar .imagenNavbar {
-  margin-left: 30px;
-}
-
-.bodyCines .navbar .imgNav {
-  height: 80px;
-}
-
-.bodyCines .navbar .btn {
-  width: 85px;
-  height: 70px;
-  border: none;
-  color: white;
-  background-color: #8C2020;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 0 0 0 #f5ca7c;
-          box-shadow: inset 0 0 0 0 #f5ca7c;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-  font-size: 1.5rem;
-  outline: none;
-}
-
-.bodyCines .navbar .btn:hover {
-  -webkit-box-shadow: inset 85px 0 0 0 #f5ca7c;
-          box-shadow: inset 85px 0 0 0 #f5ca7c;
-  color: black;
-  cursor: pointer;
-}
-
-.bodyCines .navbar .slider {
-  margin: 0 auto 0;
+  background: #000 url(/imagenes/estrellas.gif);
 }
 
 .bodyCines .banner {
@@ -197,6 +191,8 @@ footer {
 .bodyCines .cinesContenedor {
   background-color: #f5ca7c;
   padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
 .bodyCines .cinesContenedor .caj1 {
@@ -248,28 +244,96 @@ footer {
 }
 
 .bodyCines .cinesContenedor .divart {
-  background-color: #1B1926;
+  background-color: whitesmoke;
   margin: 15px;
   padding: 20px;
   border-radius: 4px;
   text-align: justify;
+}
+
+.bodyCines .cinesContenedor .divart .titulo h2 {
+  text-align: center;
+  margin: 20px;
+  font-size: 3rem;
+}
+
+.bodyCines .cinesContenedor .divart .imagenAcordion img {
+  padding-left: 40px;
+  width: 90%;
+}
+
+.bodyCines .cinesContenedor .divart .acordion .accordion-button {
+  background-color: #1B1926;
   color: white;
 }
 
-.bodyCines .cinesContenedor .divart .article {
-  padding: 15px;
+.bodyCines .cinesContenedor .divart .acordion .accordion-body {
+  color: black;
 }
 
-.bodyCines footer {
-  background-color: black;
+/*nav bar*/
+.navbar {
+  background-color: #8C2020;
+}
+
+.imagenNavbar {
+  margin-left: 30px;
+}
+
+.imgNav {
+  height: 80px;
+}
+
+.btn {
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:hover,
+.btn:active {
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:after,
+.btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
 }
 
 /*css critica*/
 .bodyCritica {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: black;
+  font-family: 'Saira Condensed', sans-serif;
   background-size: cover;
   background-attachment: fixed;
+  background: #000 url(/imagenes/estrellas.gif);
 }
 
 .navbar {
@@ -285,25 +349,47 @@ footer {
 }
 
 .btn {
-  width: 85px;
-  height: 70px;
-  border: none;
-  color: white;
-  background-color: #8C2020;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 0 0 0 #f5ca7c;
-          box-shadow: inset 0 0 0 0 #f5ca7c;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-  font-size: 1.5rem;
-  outline: none;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
-.btn:hover {
-  -webkit-box-shadow: inset 85px 0 0 0 #f5ca7c;
-          box-shadow: inset 85px 0 0 0 #f5ca7c;
-  color: black;
-  cursor: pointer;
+.btn:hover,
+.btn:active {
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:after,
+.btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
 }
 
 .banner {
@@ -521,10 +607,10 @@ div[class*="slideRight"]:hover img {
 
 /*css series*/
 .bodySeries {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: black;
+  font-family: 'Saira Condensed', sans-serif;
   background-size: cover;
   background-attachment: fixed;
+  background: #000 url(/imagenes/estrellas.gif);
 }
 
 .navbar {
@@ -540,25 +626,47 @@ div[class*="slideRight"]:hover img {
 }
 
 .btn {
-  width: 85px;
-  height: 70px;
-  border: none;
-  color: white;
-  background-color: #8C2020;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 0 0 0 #f5ca7c;
-          box-shadow: inset 0 0 0 0 #f5ca7c;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-  font-size: 1.5rem;
-  outline: none;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
-.btn:hover {
-  -webkit-box-shadow: inset 85px 0 0 0 #f5ca7c;
-          box-shadow: inset 85px 0 0 0 #f5ca7c;
-  color: black;
-  cursor: pointer;
+.btn:hover,
+.btn:active {
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:after,
+.btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
 }
 
 .banner {
@@ -568,6 +676,8 @@ div[class*="slideRight"]:hover img {
 .divseries {
   background-color: #f5ca7c;
   padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
 .artSeries {
@@ -631,6 +741,302 @@ div[class*="slideRight"]:hover img {
   text-align: justify;
 }
 
-footer {
-  background-color: black;
+body {
+  font-family: 'Saira Condensed', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 1.2rem;
+  background: #000 url(/imagenes/estrellas.gif);
+}
+
+.navbar {
+  background-color: #8C2020;
+}
+
+.imagenNavbar {
+  margin-left: 30px;
+}
+
+.imgNav {
+  height: 80px;
+}
+
+.btn {
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:hover,
+.btn:active {
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn:after,
+.btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.formulario {
+  margin-top: 50px;
+  background-color: #f5ca7c;
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.formularioTexto {
+  padding-top: 30px;
+}
+
+.formTexto {
+  margin-top: 30px;
+}
+
+.boton {
+  background-color: #BF2011;
+}
+
+.team-boxed {
+  color: #313437;
+  background-color: #eef4f7;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.team-boxed p {
+  color: #7d8285;
+}
+
+.team-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .team-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+  .team-boxed .intro h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.team-boxed .texto {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-boxed .people {
+  padding: 20px 0;
+}
+
+.team-boxed .item {
+  text-align: center;
+}
+
+.team-boxed .item .box {
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.team-boxed .item .name {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.team-boxed .item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d0d0d0;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.team-boxed .item .description {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.team-boxed .item img {
+  max-width: 160px;
+}
+
+.team-boxed .social {
+  font-size: 18px;
+  color: #a2a8ae;
+}
+
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+}
+
+.news {
+  width: 100%;
+}
+
+/*medias index*/
+@media (max-width: 575px) {
+  .imgIndex {
+    padding: 20px;
+  }
+  .textoIndex {
+    font-size: 0, 5rem;
+    padding: 20px;
+  }
+  .artNoticias {
+    padding: 20px;
+  }
+  .artNoticias h2 {
+    font-size: 1.8rem;
+  }
+  .artNoticias h3 {
+    font-size: 1.5rem;
+  }
+  .imagenNavbar {
+    margin-left: 0;
+  }
+  .textoTrailer {
+    font-size: 1rem;
+  }
+  .textoIndex {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .imgNav {
+    width: 220px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .artNoticias {
+    padding: 10px;
+  }
+  .textoIndex {
+    padding: 15px;
+  }
+  .caja {
+    padding: 10px;
+  }
+  #footerT {
+    font-size: 0.8rem;
+  }
+}
+
+/* medias para series*/
+@media (max-width: 575px) {
+  #art h2 {
+    font-size: 1.2rem;
+  }
+  #box h2 {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  #art h2 {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #box h2 {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  #footerT {
+    font-size: 0.8rem;
+  }
+}
+
+/* medias para cine */
+@media (max-width: 575px) {
+  #boxcine h2 {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+  #artcine h2 {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  #boxcine h2 {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  #artcine h2 {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  #footerT {
+    font-size: 0.8rem;
+  }
+}
+
+/* medias para critica*/
+@media (max-width: 420px) {
+  #footerT {
+    font-size: 0.8rem;
+  }
 }

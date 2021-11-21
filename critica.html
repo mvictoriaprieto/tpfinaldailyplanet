@@ -15,11 +15,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="./imagenes/favicon/favicon-32x32.png ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="./imagenes/favicon/favicon-32x32.png ">
 
@@ -49,13 +47,16 @@
                             <button class="btn">Home</button>
                         </a>
                         <a class="nav-link" href="cine.html">
-                            <button class="btn">Cines</button>
+                            <button class="btn">Cine</button>
                         </a>
                         <a class="nav-link" href="series.html">
                             <button class="btn">Series</button>
                         </a>
                         <a class="nav-link" href="critica.html">
                             <button class="btn">Crítica</button>
+                        </a>
+                        <a class="nav-link" href="staff.html">
+                            <button class="btn">Staff</button>
                         </a>
                     </div>
                 </div>
@@ -66,15 +67,14 @@
     <section class="banner">
         <img src="./imagenes/Banners/Banner_critica.jpg" alt="critica" class=" img-fluid">
     </section>
-            <section class="container galeria">
+    <main>
+        <section class="container galeria">
             <div class="row justify-content-center ">
-                <div class="col-12 col-sm-6 col-md-3 slideRight-600ms "> 
+                <div id="imgCritica" class="col-12 col-sm-6 col-md-3 slideRight-600ms ">
                     <a href="./imagenes/Critica/adams2.jpg" data-lightbox="roadtrip"
                         data-title="La familia Addams con la que crecí, al menos en la televisión, era realmente espeluznante y excéntrica. No hay nada de eso aquí. Jim Judy, de Screen It">
-                        <img src="./imagenes/Critica/adams2.jpg"
-                            alt="La familia Addams con la que crecí, al menos en la televisión, era realmente espeluznante y excéntrica. No hay nada de eso aquí.
-                            Jim Judy, de Screen It"
-                            class="img-fluid">
+                        <img src="./imagenes/Critica/adams2.jpg" alt="La familia Addams con la que crecí, al menos en la televisión, era realmente espeluznante y excéntrica. No hay nada de eso aquí.
+                            Jim Judy, de Screen It" class="img-fluid">
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 slideRight-400ms">
@@ -171,26 +171,27 @@
             </div>
         </section>
     </main>
+    <footer>
+        <section class=" footer text-center text-white">
+            <div class="container-fluid p-4 pb-0">
+                <section class="mb-4">
 
-    <footer class="text-center text-white">
-        <div class="container-fluid p-4 pb-0">
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn-outline btn-floating m-1" href="https://es-la.facebook.com/s" role="button"
-                    target="_blank"><img src="./imagenes/Iconos Sociales/facefav.png" alt="facebook"></i></a>
+                    <a class="btn-outline btn-floating m-1" href="https://es-la.facebook.com/s" role="button"
+                        target="_blank"><img src="./imagenes/Iconos Sociales/facefav.png" alt="facebook"></i></a>
 
-                <!-- Twitter -->
-                <a class=" btn-outline btn-floating m-1" href="https://twitter.com/" role="button" target="_blank"><img
-                        src="./imagenes/Iconos Sociales/twifav.png" alt="twitter"></a>
 
-                <!-- Instagram -->
-                <a class=" btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button"
-                    target="_blank"><img src="./imagenes/Iconos Sociales/instafav.png" alt="instagram"></a>
-            </section>
-        </div>
-        <div class="text-center p-3"> © 2021 Copyright Daily Planet - Create by Hidra Desing
-        </div>
-        <img src="./imagenes/Banners/Banner_footer.png" alt="footer" class="img-fluid">
+                    <a class=" btn-outline btn-floating m-1" href="https://twitter.com/" role="button"
+                        target="_blank"><img src="./imagenes/Iconos Sociales/twifav.png" alt="twitter"></a>
+
+
+                    <a class=" btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button"
+                        target="_blank"><img src="./imagenes/Iconos Sociales/instafav.png" alt="instagram"></a>
+                </section>
+            </div>
+            <div id="footerT" class="text-center p-3"> © 2021 Copyright Daily Planet - Create by Hidra Desing
+            </div>
+            <img src="./imagenes/Banners/Banner_footer.png" alt="footer" class="img-fluid ">
+        </section>
     </footer>
     <!-- lightbox -->
     <script src="./lightbox2/dist/js/lightbox-plus-jquery.js"></script>

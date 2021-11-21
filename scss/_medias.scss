@@ -1,0 +1,156 @@
+/*medias index*/
+
+@media (max-width: 575px) {
+    .imgIndex {
+        padding: 20px;
+    }
+
+    .textoIndex {
+        font-size: 0, 5rem;
+        padding: 20px;
+    }
+
+    .artNoticias {
+        padding: 20px;
+    }
+    .artNoticias h2{
+        font-size:1.8rem;
+    }
+    .artNoticias h3{
+        font-size:1.5rem;
+    }
+
+    .imagenNavbar {
+        margin-left: 0;
+    }
+
+    .textoTrailer {
+        font-size: 1rem;
+    }
+
+    .textoIndex {
+        padding: 10px;
+    }
+
+
+
+}
+
+@media (max-width: 420px) {
+    .imgNav {
+        width: 220px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .artNoticias {
+        padding: 10px;
+    }
+
+    .textoIndex {
+        padding: 15px;
+    }
+
+    .caja {
+        padding: 10px;
+
+    }
+
+    #footerT {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* medias para series*/
+
+@media (max-width: 575px) {
+    #art h2 {
+        font-size: 1.2rem;
+    }
+
+    #box h2 {
+        font-size: 1.2rem;
+        margin: 5px
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    #art h2 {
+        font-size: 1rem;
+        padding: 5px;
+
+    }
+
+    #box h2 {
+        font-size: 1rem;
+        margin: 5px
+    }
+
+    #footerT {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* medias para cine */
+
+
+@media (max-width: 575px) {
+    #boxcine h2 {
+        font-size: 1.3rem;
+        margin: 5px;
+
+    }
+
+    #artcine h2 {
+        font-size: 1.3rem;
+        margin: 5px
+    }
+}
+
+
+@media (max-width: 420px) {
+    #boxcine h2 {
+        font-size: 1rem;
+        margin: 5px
+    }
+
+    
+    #artcine h2 {
+        font-size: 1rem;
+        margin: 5px
+    }
+
+    #footerT {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* medias para critica*/
+
+
+
+@media (max-width: 420px) {
+    #footerT {
+        font-size: 0.8rem;
+    }
+}

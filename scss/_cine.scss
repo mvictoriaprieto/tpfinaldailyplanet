@@ -1,36 +1,11 @@
 /*css cine*/
+/*nesting*/
+
 .bodyCines {
-    font-family: 'Titillium Web', sans-serif;
-    background-color: black;
+    font-family: 'Saira Condensed', sans-serif;
     background-size: cover;
     background-attachment: fixed;
-
-
-    .navbar {
-        background-color: $color-navbar;
-
-        .imagenNavbar {
-            margin-left: 30px;
-        }
-
-        .imgNav {
-            height: 80px;
-        }
-
-        .btn {
-            @include bot;
-        }
-
-        .btn:hover {
-            @include hover;
-        }
-
-        //*section*//
-        .slider {
-            margin: 0 auto 0;
-        }
-
-    }
+    background: #000 url(/imagenes/estrellas.gif);
 
     .banner {
         margin-top: 110px;
@@ -39,6 +14,8 @@
     .cinesContenedor {
         background-color: $color-amarillo;
         padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
 
         .caj1 {
             @include caj;
@@ -57,24 +34,73 @@
         }
 
         .divart {
-            background-color: $color-az-oscuro;
+            background-color: whitesmoke;
             margin: 15px;
             padding: 20px;
             border-radius: 4px;
             text-align: justify;
-            color: white;
+         
 
-            .article {
-                padding: 15px;
+            .titulo h2 {
+                text-align: center;
+                margin: 20px;
+                font-size: 3rem;
+            }
 
+            .imagenAcordion img {
+                padding-left: 40px;
+                width: 90%;
+            }
 
+            .acordion {
+                .accordion-button {
+                    background-color: $color-az-oscuro;
+                    color: white;
+                }
+
+                .accordion-body {
+                    color: black;
+                }
             }
         }
-
     }
 
-    footer {
-        background-color: black;
+}
 
-    }
+/*nav bar*/
+
+.navbar {
+    background-color: $color-navbar;
+
+}
+
+.imagenNavbar {
+    margin-left: 30px;
+}
+
+.imgNav {
+    height: 80px;
+}
+
+.btn {
+    @include boton1;
+}
+
+.btn:hover,
+.btn:active {
+    @include boton2;
+}
+
+.btn:after,
+.btn:before {
+    @include boton3;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+    @include boton4;
+}
+
+.btn:hover:before {
+    @include boton5
 }

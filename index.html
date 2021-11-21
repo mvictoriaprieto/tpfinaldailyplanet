@@ -7,22 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords"
     content="cines, peliculas, series, criticas de cine, criticas de series, streaming, opinion, netflix, amazon prime, apple tv, hbo max, disney plus, daily planet,">
-  <meta name="description"
-    content="Daily Planet es un blog dedicado al cine y las series; novedades y estrenos">
+  <meta name="description" content="Daily Planet es un blog dedicado al cine y las series; novedades y estrenos">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
   <link rel="shortcut icon" href="./imagenes/favicon/favicon-32x32.png ">
   <link rel="stylesheet" href="./css/estilos.css">
   <title>Daily Planet</title>
 </head>
 
 <body>
+
   <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="container-fluid ">
@@ -43,7 +44,7 @@
               <button class="btn">Home</button>
             </a>
             <a class="nav-link" href="cine.html">
-              <button class="btn">Cines</button>
+              <button class="btn">Cine</button>
             </a>
             <a class="nav-link" href="series.html">
               <button class="btn">Series</button>
@@ -51,187 +52,229 @@
             <a class="nav-link" href="critica.html">
               <button class="btn">Crítica</button>
             </a>
+            <a class="nav-link" href="staff.html">
+              <button class="btn">Staff</button>
+            </a>
           </div>
         </div>
       </div>
       </div>
     </nav>
   </header>
+  <main>
 
-  <section class="slider col-12">
-    <div class="mx-auto carrusel">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./imagenes/Imagenes Slider/Slider_Gucci.jpg" class="d-block w-100" alt="Gucci">
+    <section class="slider col-12">
+      <div class="mx-auto carrusel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenes/Imagenes Slider/Slider_Gucci.jpg" class="d-block w-100" alt="Gucci">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/Imagenes Slider/Slider_obiwan.jpg" class="d-block w-100" alt="Obiwan">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/Imagenes Slider/Slider_Foundation.jpg" class="d-block w-100" alt="fundation">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="./imagenes/Imagenes Slider/Slider_obiwan.jpg" class="d-block w-100" alt="Obiwan">
-          </div>
-          <div class="carousel-item">
-            <img src="./imagenes/Imagenes Slider/Slider_Foundation.jpg" class="d-block w-100" alt="fundation">
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    </section>
+    <section class="container-fluid bannerIndex ">
+      <div>
+        <img src="./imagenes/Banners/Banner_novedades.jpg" alt="novedades" class="img-fluid ">
       </div>
-  </section>
-  <section class="container-fluid banner">
-    <div>
-      <img src="./imagenes/Banners/Banner_novedades.jpg" alt="novedades" class="img-fluid ">
-    </div>
-  </section>
+    </section>
 
-  <section class="container">
-    <div class="row noticiasIndex">
-      <div class=" col-xl-5 col-lg-6 artNoticias">
-        <div>
-          <img src="./imagenes/matrix.jpg" alt="matrix" class="img-fluid ">
+    <section class="container">
+      <div class="row noticiasIndex">
+        <div class=" col-xl-5 col-lg-6 artNoticias">
+          <article class="artNoticiastexto">
+            <div>
+              <img src="./imagenes/matrix.jpg" alt="matrix" class="img-fluid ">
+            </div>
+
+            <h2>Ultimas Noticias Cines</h2>
+            <h3>Matrix 4 - Resurrections</h3>
+            <P>El cine actual le debe mucho a 'Matrix' de las hermanas Lana y Lily Wachowski, y ahora parece que
+              volverán
+              a
+              repetir la jugada con 'Matrix Resurrections', la cuarta entrega de la saga que reúne al reparto. La
+              película
+              original protagonizada por Keanu Reeves y Carrie-Ann Moss revolucionó el género de la ciencia ficción, el
+              de
+              acción y el cine en general. Estrenada en uno de los mejores años en cuanto a películas se refiere, 1999,
+              sus
+              innovadores efectos especiales dejaron huella, al igual que sus espectaculares coreografías.</P>
+            <p>'Matrix' tuvo dos secuelas que, aunque no tuvieron el mismo aplauso de la crítica, son altamente
+              recomendables. Y hace poco menos de un año se anunció que tendríamos 'Matrix 4'. El hype está por las
+              nubes
+              (y
+              nos para menos). ¿Conseguirán revolucionar el cine de nuevo? </p>
+          </article>
+          <article class="artNoticiastexto">
+            <div>
+              <img src="./imagenes/eternals.jpg" alt="eternals" class="imgArt">
+            </div>
+            <h3> Eternals - La nueva película de Marvel</h3>
+            <p>
+              Eternals es quizá la película de Marvel más extraña y arriesgada - tanto en su propuesta como por su
+              directora la ganadora de un Oscar Chloé Zaho- y manera de contar la historia. En sus más de dos horas y
+              media quizás incluye demasiada información y al final resulta un tanto confusa.<br> La película es un
+              paseo por todo el globo terráqueo pero recorre la humanidad desde el año 5.000 antes de Cristo, en
+              Mesopotamia, hasta el Londres contemporáneo. Y hay mucho que contar, y ese es precisamente el principal
+              choque: que está comprimida la mitología y la historia de la humanidad, para que puedas comprender las
+              motivaciones de cada uno de los personajes, que son tantos, a los que pasan tantas cosas, que no da tiempo
+              a asumirlo. Y todo ello sin renunciar a la espectacularidad de Marvel, y margen para el drama también.
+              <br> <br>El elenco de la película es espectacular y repleto de estrellas: Gemma Chan da vida a Sersi,
+              Richard Madden, que encarna a Ikaris, ambos vivirán una historia de amor. Angelina Jolie, que da vida a
+              Thena; Salma Hayek, que interpreta a Ajak; Kumail Nanjiani, en la piel de Kingo; Lia McHugh, que
+              interpreta a Sprite; Brian Tyree Henry, en el personaje de Phastos; Lauren Ridloff, que es Makkarof; Barry
+              Keoghan, como Druig y Dong-seok Ma, como Gilgamesh.
+            </p>
+          </article>
         </div>
 
-        <h2>Ultimas Noticias Cines</h2>
-        <h3>Matrix 4 - Resurrections</h3>
-        <P>El cine actual le debe mucho a 'Matrix' de las hermanas Lana y Lily Wachowski, y ahora parece que volverán
-          a
-          repetir la jugada con 'Matrix Resurrections', la cuarta entrega de la saga que reúne al reparto. La película
-          original protagonizada por Keanu Reeves y Carrie-Ann Moss revolucionó el género de la ciencia ficción, el de
-          acción y el cine en general. Estrenada en uno de los mejores años en cuanto a películas se refiere, 1999,
-          sus
-          innovadores efectos especiales dejaron huella, al igual que sus espectaculares coreografías.</P>
-        <p>'Matrix' tuvo dos secuelas que, aunque no tuvieron el mismo aplauso de la crítica, son altamente
-          recomendables. Y hace poco menos de un año se anunció que tendríamos 'Matrix 4'. El hype está por las nubes
-          (y
-          nos para menos). ¿Conseguirán revolucionar el cine de nuevo? </p>
-
-      </div>
-      <div class="col-xl-7 col-lg-6">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row caja">
-              <div class="col-xl-12 col-lg-12 imgIndex">
-                <img src="./imagenes/casapapel.jpg" alt="casa de papel" class="img-fluid ">
+        <div class="col-xl-7 col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row caja">
+                <div class="col-xl-12 col-lg-12 imgIndex">
+                  <img src="./imagenes/casapapel.jpg" alt="casa de papel" class="img-fluid ">
+                </div>
+                <div class="col-xl-12 col-lg-12 textoIndex">
+                  <h4>La casa de papel - Temporada 4</h4>
+                  <p>
+                    La cuarta temporada de la serie española que tuvo gran acogida en Netflix ha aterrizado finalmente
+                    en
+                    la
+                    plataforma de streaming. Muchos de los fanáticos de ‘La resistencia’ esperaban con ansias el estreno
+                    de los
+                    nuevos episodios para poder resolver varios de los misterios que dejó la entrega anterior.
+                </div>
               </div>
-              <div class="col-xl-12 col-lg-12 textoIndex">
-                <h4>La casa de papel - Temporada 4</h4>
-                <p>
-                  La cuarta temporada de la serie española que tuvo gran acogida en Netflix ha aterrizado finalmente en
-                  la
-                  plataforma de streaming. Muchos de los fanáticos de ‘La resistencia’ esperaban con ansias el estreno
-                  de los
-                  nuevos episodios para poder resolver varios de los misterios que dejó la entrega anterior.
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row caja">
+                <div class="col-xl-12 col-lg-12 imgIndex">
+                  <img src="./imagenes/witcher.jpg" alt="witcher" class="img-fluid">
+                </div>
+                <div class="col-xl-12 col-lg-12 textoIndex">
+                  <h4>The Witcher': Netflix confirma la temporada 3</h4>
+                  <p>
+                    Geralt de Rivia, el legendario brujo cazador de monstruos, gravita inexorablemente hacia su destino
+                    en
+                    un
+                    mundo de tormentos y humanas traiciones.
+                    The Witcher ha demostrado ser un gran éxito para Netflix, y la plataforma no va a dejar pasar la
+                    oportunidad
+                    de aprovecharlo.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row caja">
+                <div class="col-xl-12 col-lg-12 imgIndex ">
+                  <img src="./imagenes/dune.jpeg" alt="dune" class="img-fluid ">
+                </div>
+
+                <div class="col-xl-12 col-lg-12 textoIndex">
+                  <h4>Dune: espectáculo glorioso</h4>
+                  <p>
+                    Arrakis, también denominado "Dune", se ha convertido en el planeta más importante del universo. A su
+                    alrededor comienza una gigantesca lucha por el poder que culmina en una guerra interestelar.
+                    Una arrolladora épica espacial que consagra a Denis Villeneuve como adalid del blockbuster de autor
+                    contemporáneo.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-12">
-            <div class="row caja">
-              <div class="col-xl-12 col-lg-12 imgIndex">
-                <img src="./imagenes/witcher.jpg" alt="witcher" class="img-fluid">
-              </div>
-              <div class="col-xl-12 col-lg-12 textoIndex">
-                <h4>The Witcher': Netflix confirma la temporada 3</h4>
-                <p>
-                  Geralt de Rivia, el legendario brujo cazador de monstruos, gravita inexorablemente hacia su destino en
-                  un
-                  mundo de tormentos y humanas traiciones.
-                  The Witcher ha demostrado ser un gran éxito para Netflix, y la plataforma no va a dejar pasar la
-                  oportunidad
-                  de aprovecharlo.
-                </p>
-              </div>
+      </div>
 
-            </div>
-          </div>
+    </section>
 
-          <div class="col-lg-12">
-            <div class="row caja">
-              <div class="col-xl-12 col-lg-12 imgIndex ">
-                <img src="./imagenes/dune.jpeg" alt="dune" class="img-fluid ">
-              </div>
-
-              <div class="col-xl-12 col-lg-12 textoIndex">
-                <h4>Dune: espectáculo glorioso</h4>
-                <p>
-                  Arrakis, también denominado "Dune", se ha convertido en el planeta más importante del universo. A su
-                  alrededor comienza una gigantesca lucha por el poder que culmina en una guerra interestelar.
-                  Una arrolladora épica espacial que consagra a Denis Villeneuve como adalid del blockbuster de autor
-                  contemporáneo.
-                </p>
-              </div>
-            </div>
+    <section class="container">
+      <div class="row trailerNoticias">
+        <div class="col-lg-6 textoTrailer">
+          <h4> The Flash</h4>
+          <p>
+            The Flash es el nombre oficial de la nueva película de DC protagonizada en solitario por Flash que
+            interpreta
+            Ezra Miller (Animales fantásticos: Los crímenes de Grindelwald, Las ventajas de ser un marginado) y cuenta
+            con
+            Andy Muschietti (It, It: Capítulo 2) en la dirección.
+            Esta nueva película de superhéroes seguirá la línea de cómics de DC conocida como Flashpoint, en la que
+            Flash
+            debe realizar un viaje en el tiempo con el objetivo de salvar la vida de su madre y provoca múltiples
+            cambios
+            en
+            la línea temporal de DC.
+            Si todo va bien, la película The Flash aterrizará en las salas de cine el próximo 4 de noviembre de 2022.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <iframe class="video" src="https://www.youtube.com/embed/drQWopZDEEY" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
+
       </div>
+    </section>
+  </main>
 
-    </div>
+  <footer>
+    <section class=" footer text-center text-white">
 
-  </section>
+      <div class="container-fluid p-4 pb-0">
+        <section class="mb-4">
 
-  <section class="container">
-    <div class="row trailerNoticias">
-      <div class="col-lg-6 textoTrailer">
-        <h4> The Flash</h4>
-        <p>
-          The Flash es el nombre oficial de la nueva película de DC protagonizada en solitario por Flash que interpreta
-          Ezra Miller (Animales fantásticos: Los crímenes de Grindelwald, Las ventajas de ser un marginado) y cuenta con
-          Andy Muschietti (It, It: Capítulo 2) en la dirección.
-          Esta nueva película de superhéroes seguirá la línea de cómics de DC conocida como Flashpoint, en la que Flash
-          debe realizar un viaje en el tiempo con el objetivo de salvar la vida de su madre y provoca múltiples cambios
-          en
-          la línea temporal de DC.
-          Si todo va bien, la película The Flash aterrizará en las salas de cine el próximo 4 de noviembre de 2022.
-        </p>
+          <a class="btn-outline btn-floating m-1" href="https://es-la.facebook.com/s" role="button" target="_blank"><img
+              src="./imagenes/Iconos Sociales/facefav.png" alt="facebook"></i></a>
+
+
+          <a class=" btn-outline btn-floating m-1" href="https://twitter.com/" role="button" target="_blank"><img
+              src="./imagenes/Iconos Sociales/twifav.png" alt="twitter"></a>
+
+
+          <a class=" btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button" target="_blank"><img
+              src="./imagenes/Iconos Sociales/instafav.png" alt="instagram"></a>
+        </section>
       </div>
-      <div class="col-lg-6">
-        <div>
-          <iframe class="video" src="https://www.youtube.com/embed/drQWopZDEEY" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+      <div id="footerT" class="text-center p-3"> © 2021 Copyright Daily Planet - Create by Hidra Desing
       </div>
+      <img src="./imagenes/Banners/Banner_footer.png" alt="footer" class="img-fluid ">
 
-    </div>
-  </section>
-
-  <footer class="text-center text-white">
-    <div class="container-fluid p-4 pb-0">
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn-outline btn-floating m-1" href="https://es-la.facebook.com/s" role="button" target="_blank"><img
-            src="./imagenes/Iconos Sociales/facefav.png" alt="facebook"></i></a>
-
-        <!-- Twitter -->
-        <a class=" btn-outline btn-floating m-1" href="https://twitter.com/" role="button" target="_blank"><img
-            src="./imagenes/Iconos Sociales/twifav.png" alt="twitter"></a>
-
-        <!-- Instagram -->
-        <a class=" btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button" target="_blank"><img
-            src="./imagenes/Iconos Sociales/instafav.png" alt="instagram"></a>
-      </section>
-    </div>
-    <div class="text-center p-3"> © 2021 Copyright Daily Planet - Create by Hidra Desing
-    </div>
-    <img src="./imagenes/Banners/Banner_footer.png" alt="footer" class="img-fluid">
+    </section>
   </footer>
 
-
-  <!--bootstrap  -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-  </script>
+    </script>
 
 </body>
 

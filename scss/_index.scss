@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +5,11 @@
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;
-    background-color:black;
+    font-family: 'Saira Condensed', sans-serif;
     background-size: cover;
     background-attachment: fixed;
-
+    font-size: 1.2rem;
+    background: #000 url(/imagenes/estrellas.gif);
 }
 
 //*header*//
@@ -22,17 +21,34 @@ body {
 .imagenNavbar {
     margin-left: 30px;
 }
-.imgNav{
+
+.imgNav {
     height: 80px;
 }
 
 .btn {
-    @include bot;
+    @include boton1;
 }
 
-.btn:hover {
-    @include hover;
+.btn:hover,
+.btn:active {
+    @include boton2;
 }
+
+.btn:after,
+.btn:before {
+    @include boton3;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+    @include boton4;
+}
+
+.btn:hover:before {
+    @include boton5
+}
+
 
 //*section*//
 .slider {
@@ -40,16 +56,16 @@ body {
 }
 
 .carrusel {
-    margin-top: 95px;
-    margin-bottom:10px;
+    margin-top: 105px;
+    margin-bottom: 10px;
 
 }
-
 
 .noticiasIndex {
     background-color: $color-amarillo;
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px;
+    margin-top: 10px;
 
 }
 
@@ -59,20 +75,44 @@ body {
     border-radius: 4px;
     padding: 30px;
     text-align: justify;
-    
+
 }
 
+.imgArt {
+    width: 100%;
+    padding: 20px;
+}
 
-.textoIndex{
+.artNoticiastexto h2 {
+    padding: 10px;
+    margin: 15px;
+    font-size: 2.5rem;
+}
+
+.artNoticiastexto h3 {
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.artNoticiastexto p {
+    font-size: 1.2rem;
     margin: 10px;
-    text-align:justify;
+}
+
+.textoIndex {
+    margin: 10px;
+    text-align: justify;
+}
+
+.textoIndex h4 {
+    font-size: 1.8rem;
+    margin: 8px;
 }
 
 .caja {
     background-color: white;
     color: black;
     border-radius: 4px;
-    padding: 20px;
     margin: 10px;
     text-align: justify;
     align-items: center;
@@ -81,15 +121,13 @@ body {
     top: 0;
     padding: 40px 25px;
     transition: all .3s ease-in-out;
-
 }
 
 .caja:hover {
-    top: -5px;
+    top: -8px;
     border-radius: 4px;
     box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
 }
-
 
 .trailerNoticias {
     background-color: $color-azul;
@@ -97,7 +135,7 @@ body {
     padding: 20px;
     border-radius: 4px;
     align-items: center;
-
+    margin-top: 10px;
 }
 
 .textoTrailer {
@@ -106,37 +144,12 @@ body {
     font-size: 1.2rem;
 }
 
+.textoTrailer h4 {
+    font-size: 2rem;
+}
+
+
 .video {
     width: 100%;
     height: 400px;
-}
-footer{
-    background-color:black;
-}
-
-
-
-
-@media (max-width: 575px) {
-    .imgIndex {
-        padding: 20px;
-    }
-
-    .textoIndex {
-        font-size: 0, 5rem;
-        padding: 20px;
-    }
-
-    .slider {
-        margin-top: 100px;
-    }
-
-    .imagenNavbar {
-        margin-left: 0;
-    }
-    
-    .textoTrailer {
-        font-size: 1rem;
-    }
-    
 }

@@ -10,9 +10,11 @@
     <meta name="description" content="Daily Planet es un blog dedicado al cine y las series; novedades y estrenos.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="./imagenes/favicon/favicon-32x32.png ">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>CINES - Daily Planet</title>
@@ -24,7 +26,7 @@
             <div class="container-fluid ">
 
                 <div class="imagenNavbar ">
-                    <a class="navbar-brand" href="index.html"><img class="imgNav" src="./imagenes/logo.png"
+                    <a class="navbar-brand" href="index.html"><img id="imgcine" class="imgNav" src="./imagenes/logo.png"
                             alt="Daily Planet"></a>
                 </div>
 
@@ -40,13 +42,16 @@
                             <button class="btn">Home</button>
                         </a>
                         <a class="nav-link" href="cine.html">
-                            <button class="btn">Cines</button>
+                            <button class="btn">Cine</button>
                         </a>
                         <a class="nav-link" href="series.html">
                             <button class="btn">Series</button>
                         </a>
                         <a class="nav-link" href="critica.html">
                             <button class="btn">Crítica</button>
+                        </a>
+                        <a class="nav-link" href="staff.html">
+                            <button class="btn">Staff</button>
                         </a>
                     </div>
                 </div>
@@ -59,8 +64,8 @@
             <img src="./imagenes/Banners/Banner_cine.jpg" alt="cines" class="img-fluid ">
         </div>
     </section>
-    <div class="container cinesContenedor">
-        <div class="caj1 row ">
+    <main class="container cinesContenedor">
+        <div id="boxcine" class="caj1 row ">
             <div class="col-lg-5">
                 <img class="imagenPelicula img-fluid" src="./imagenes/Peliculas/tiempo.jpg" alt="tiempo">
             </div>
@@ -76,7 +81,7 @@
                 </p>
             </div>
         </div>
-        <div class="caj2 row ">
+        <div id="boxcine" class="caj2 row ">
             <div class=" col-lg-5 ">
                 <img class="imagenPelicula img-fluid" src="./imagenes/Peliculas/shang-chi.jpg" alt="chi">
             </div>
@@ -96,27 +101,82 @@
                 </p>
             </div>
         </div>
-        <div class="divart row ">
-            <div class="col-lg-12 ">
-                <img class="articleImg img-fluid" src="./imagenes/Peliculas/batman.jpg" alt="batman">
+        <div class="divart row " id="acorMedia">
+            <div class="titulo">
+                <h2>Proximo Lanzamiento</h2>
             </div>
-            <article class="article col-lg-12 ">
-                <h2 class="articleTitulo ">THE BATMAN: Muchos hablan de una
-                    Masterpiece antes de su estreno, su secuela esta en pre produccion.</h2>
-                <p class="articleTexto">
-                    Nueva película de Batman, que estará más centrada en los cómics originales del personaje y
-                    con
-                    un
-                    estilo cercano al cine negro. Ben Affleck, tras interpretar tres veces al personaje, no
-                    repetirá
-                    en
-                    esta ocasión. Estreno: marzo 2022 (aplazado desde otoño 2021).
-                </p>
-            </article>
+            <div class="col-lg-3 imagenAcordion">
+                <img class="img-fluid" src="./imagenes/Peliculas/casafantasmas.jpg" alt="casafantasmas">
+            </div>
+
+            <div class="accordion col-lg-9 acordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Ficha Técnica
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Género: Aventuras <br>
+                                Duración: 124min <br>
+                                Actores: Annie Potts, Carrie Coon, Ernie Hudson, Finn Wolfhard, McKenna Grace, Paul Rudd
+                                <br>
+                                Director: Jason Reitman
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Sinopsis
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Callie, una madre soltera y sus 2 hijos (Trevor y Phoebe) se mudan a la granja que
+                                heredaron de su abuelo, en un pequeño pueblo. En ella descubrirán los secretos que los
+                                unen a ese lugar y el legado de su abuelo que lo conecta con los orígenes de los
+                                Cazafantasmas.<br>
+
+                                Con ayuda de su maestro el Sr. Grooberson (Paul Rudd), descubrirán que encontraron una
+                                réplica de una trampa para atrapar fantasmas. Mientras, algo extraño sucede en la
+                                pequeña localidad, con misteriosos temblores que podrían significar el regreso de los
+                                fantasmas después de 30 años.-
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Review - Daily Planet
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p> Reinicio increíblemente sincero que es extremadamente conmovedor, emotivo y divertido a la vez que trata al original con respeto. También tiene muchas devoluciones de llamada satisfactorias, incluso si su narrativa es básicamente la misma que la original.
+
+                                Mckenna Grace ofrece una actuación principal increíble y Paul Rudd, Celeste O'Connor, Logan Kim, Finn Wolfhard y Carrie Coon ofrecen grandes actuaciones de apoyo y tienen una gran química.
+                                
+                                La dirección de Jason Reitman es fantástica, está muy bien filmada y tiene un ritmo magnífico. <strong>Lois Lane - Daily Planet </strong> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <div class="caj3 row ">
+        <div id="boxcine" class="caj3 row ">
             <div class="col-lg-5">
                 <img class="imagenPelicula img-fluid" src="./imagenes/Peliculas/ice_road.jpg" alt="ice">
             </div>
@@ -136,7 +196,7 @@
                 </p>
             </div>
         </div>
-        <div class="caj4 row">
+        <div id="boxcine" class="caj4 row">
             <div class="col-lg-5">
                 <img class="imagenPelicula img-fluid" src="./imagenes/Peliculas/suicide-squad.jpg" alt="suicide-squad">
             </div>
@@ -158,28 +218,30 @@
                 </p>
             </div>
         </div>
-    </div>
-    <footer class="text-center text-white container-fluid ">
-        <div class="p-4 pb-0">
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn-outline btn-floating m-1" href="https://es-la.facebook.com/s" role="button"
-                    target="_blank"><img src="./imagenes/Iconos Sociales/facefav.png" alt="facebook"></i></a>
+    </main>
+    <footer>
+        <section class=" footer text-center text-white">
 
-                <!-- Twitter -->
-                <a class=" btn-outline btn-floating m-1" href="https://twitter.com/" role="button" target="_blank"><img
-                        src="./imagenes/Iconos Sociales/twifav.png" alt="twitter"></a>
+            <div class="container-fluid p-4 pb-0">
+                <section class="mb-4">
 
-                <!-- Instagram -->
-                <a class=" btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button"
-                    target="_blank"><img src="./imagenes/Iconos Sociales/instafav.png" alt="instagram"></a>
-            </section>
-        </div>
-        <div class="text-center p-3"> © 2021 Copyright Daily Planet - Create by Hidra Desing
-        </div>
-        <img src="./imagenes/Banners/Banner_footer.png" alt="footer" class="img-fluid">
+                    <a class="btn-outline btn-floating m-1" href="https://es-la.facebook.com/s" role="button"
+                        target="_blank"><img src="./imagenes/Iconos Sociales/facefav.png" alt="facebook"></i></a>
+
+
+                    <a class=" btn-outline btn-floating m-1" href="https://twitter.com/" role="button"
+                        target="_blank"><img src="./imagenes/Iconos Sociales/twifav.png" alt="twitter"></a>
+
+
+                    <a class=" btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button"
+                        target="_blank"><img src="./imagenes/Iconos Sociales/instafav.png" alt="instagram"></a>
+                </section>
+            </div>
+            <div id="footerT" class="text-center p-3"> © 2021 Copyright Daily Planet - Create by Hidra Desing
+            </div>
+            <img src="./imagenes/Banners/Banner_footer.png" alt="footer" class="img-fluid ">
+        </section>
     </footer>
-    <!--bootstrap  -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -193,3 +255,21 @@
 </body>
 
 </html>
+
+<!-- 
+<div class="col-lg-12 ">
+    <img class="articleImg img-fluid" src="./imagenes/Peliculas/batman.jpg" alt="batman">
+</div>
+<article id="artcine" class="article col-lg-12 ">
+    <h2 class="articleTitulo ">THE BATMAN: Muchos hablan de una
+        Masterpiece antes de su estreno, su secuela esta en pre produccion.</h2>
+    <p class="articleTexto">
+        Nueva película de Batman, que estará más centrada en los cómics originales del personaje y
+        con
+        un
+        estilo cercano al cine negro. Ben Affleck, tras interpretar tres veces al personaje, no
+        repetirá
+        en
+        esta ocasión. Estreno: marzo 2022 (aplazado desde otoño 2021).
+    </p>
+</article> -->
